@@ -13,7 +13,8 @@ jobs:
       - name: Build Java package
         run: mvn clean install -f Javarepo1/pom.xml
       - name: Sonar code check
-        run: mvn sonar:sonar -f Javarepo1/pom.xml -Dsonar.projectKey=kvamsikrishna717_jenkinsjavacoderepo
+        run: mvn sonar:sonar -f Javarepo1/pom.xml -Dsonar.projectKey=kvamsikrishna717
+          -branch=main 
           -Dsonar.organization=kvamsikrishna717
           -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=kvamsikrishna717
           -Dsonar.token=564042f6ab6e9c64c968c73d5fed93581b586488
